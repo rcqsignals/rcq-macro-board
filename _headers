@@ -1,0 +1,9 @@
+/data/*
+  Cache-Control: no-store, max-age=0
+  Access-Control-Allow-Origin: *
+
+/
+  Cache-Control: public, max-age=300
+
+/assets/*
+  Cache-Control: public, max-age=86400

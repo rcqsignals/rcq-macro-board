@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Macro Command Board · RC Quantum Automation</title>
+<meta name="description" content="RC Quantum Automation's macro dashboard: rates, inflation, growth, liquidity, credit, dollar, fiscal and energy, refreshed each weekday.">
+<link rel="icon" type="image/png" href="assets/rcq-logo.png">
+<meta property="og:title" content="Macro Command Board · RC Quantum Automation">
+<meta property="og:description" content="Key U.S. macro metrics for the investment group, refreshed each weekday.">
+<meta property="og:image" content="https://macro.rcqsignals.com/assets/rcq-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>:root{
+  --bg:#f6f7f9;--panel:#ffffff;--fg:#0f1720;--muted:#5b6673;--line:#e2e6eb;--grid:#eceff3;
+  --ok:#1a7f4b;--warn:#a86400;--bad:#c62f2f;--accent:#1fa8e8;--ink:#0d283c;
+  --pop:#ffffff;--shadow:0 6px 20px rgba(15,23,32,.12);--muted-dot:#b4bcc6;
+  --radius:10px;--gap:16px;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --display:"Barlow Condensed","Inter",system-ui,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b0f14;--panel:#121820;--fg:#e7edf3;--muted:#93a0ae;--line:#233040;--grid:#1c2633;
+    --ok:#4cc38a;--warn:#e6a23c;--bad:#ff6b6b;--accent:#3dbdf5;--ink:#e7edf3;
+    --pop:#18202b;--shadow:0 6px 20px rgba(0,0,0,.45);--muted-dot:#55606d;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b0f14;--panel:#121820;--fg:#e7edf3;--muted:#93a0ae;--line:#233040;--grid:#1c2633;
+  --ok:#4cc38a;--warn:#e6a23c;--bad:#ff6b6b;--accent:#3dbdf5;--ink:#e7edf3;
+  --pop:#18202b;--shadow:0 6px 20px rgba(0,0,0,.45);--muted-dot:#55606d;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.mx{max-width:1400px;margin:0 auto;padding:28px clamp(16px,3vw,40px) 48px;display:flex;flex-direction:column;gap:36px}
+.head{display:flex;flex-direction:column;gap:12px}
+.brand{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.logo{position:relative;height:88px;aspect-ratio:236/180;flex:none}
+.logo span{position:absolute;inset:0}
+.logo .ink{background:var(--ink);-webkit-mask:url(assets/logo-navy.png) center/contain no-repeat;mask:url(assets/logo-navy.png) center/contain no-repeat}
+.logo .acc{background:url(assets/logo-cyan.png) center/contain no-repeat}
+.btxt{display:flex;flex-direction:column;gap:2px}
+.kicker{margin:0;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+h1{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(30px,4vw,42px);letter-spacing:.01em;line-height:1.05}
+.brief{margin:0;max-width:62rem;font-size:16px}
+.asof{margin:0;font-size:12.5px;color:var(--muted)}
+.regime{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.regime li{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:5px 10px;font-size:12.5px;display:flex;gap:6px}
+.regime .p{color:var(--muted)}
+.regime b{font-weight:600}
+.nav{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px}
+.nav a{color:var(--muted);text-decoration:none}
+.nav a:hover{color:var(--fg)}
+.err{background:var(--panel);border:1px solid var(--bad);color:var(--bad);border-radius:var(--radius);padding:10px 14px;font-size:13px}
+.sec{display:flex;flex-direction:column;gap:14px;scroll-margin-top:20px}
+.sh h2{margin:0;font-size:19px;font-weight:600}
+.sh p{margin:4px 0 0;color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:var(--gap)}
+.tile{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.wide{grid-column:1/-1}
+.th{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.th h3,.caltop h3{margin:0;font-size:15px;font-weight:600}
+.per{font-size:12px;color:var(--muted);text-align:right}
+.big{font-family:var(--display);font-weight:500;font-size:40px;line-height:1.1;font-variant-numeric:tabular-nums;letter-spacing:.01em}
+.chg{font-size:12.5px;font-variant-numeric:tabular-nums;min-height:1.2em}
+[data-tone=bad]{color:var(--bad)}[data-tone=warn]{color:var(--warn)}[data-tone=good]{color:var(--ok)}
+.why{margin:6px 0 0;font-size:12.5px}
+.src{margin:0;font-size:12px;color:var(--muted)}
+.spark{position:relative;height:48px;margin-top:4px}
+.curve{position:relative;height:240px}
+.sk{color:transparent!important;background:linear-gradient(90deg,var(--grid),var(--line),var(--grid));background-size:200% 100%;border-radius:6px;animation:sh 1.4s linear infinite}
+@keyframes sh{to{background-position:-200% 0}}
+.tip{position:absolute;pointer-events:none;background:var(--pop);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);padding:5px 9px;font-size:12px;white-space:nowrap;z-index:5}
+.tip .d{color:var(--muted)}
+.ax text{fill:var(--muted);font-size:12px;font-family:var(--sans)}
+.caltop{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{font:inherit;font-size:12.5px;background:transparent;color:var(--muted);border:0;padding:5px 12px;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--bg);color:var(--fg)}
+.next{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,13rem),1fr));gap:var(--gap);min-height:5.5rem}
+.nx{border-left:2px solid var(--bad);padding:4px 10px;display:flex;flex-direction:column;gap:2px}
+.nx .w,.nx .m{font-size:12px;color:var(--muted)}
+.nx .r{font-weight:600}
+.nx .d{font-family:var(--display);font-size:22px;font-weight:500}
+.tblwrap{overflow:auto;max-height:28rem;margin-top:8px}
+.tbl{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+.tbl th{position:sticky;top:0;background:var(--panel);text-align:left;font-weight:600;color:var(--muted);padding:6px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+.tbl td{padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl tr.wk td{background:var(--bg)}
+.tbl td.nw{white-space:nowrap}
+.tag{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.tag i{width:.45rem;height:.45rem;border-radius:50%;background:var(--muted-dot)}
+.tag[data-impact=high] i{background:var(--bad)}
+.est{color:var(--warn)}
+.foot{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+.foot p{margin:0 0 4px}
+@media (max-width:640px){.tbl .hn{display:none}.logo{height:64px}.big{font-size:34px}}
+@media (prefers-reduced-motion:reduce){.sk{animation:none}html{scroll-behavior:auto}}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main class="mx">
+<header class="head">
+<div class="brand"><div class="logo" role="img" aria-label="RC Quantum Automation"><span class="ink"></span><span class="acc"></span></div><div class="btxt"><p class="kicker">RC Quantum Automation · Investment Group</p><h1>Macro Command Board</h1></div></div>
+<p class="brief sk" id="brief">&nbsp;</p>
+<p class="asof">Read as of <span id="asof"></span> · data updated <span id="updated"></span> · refreshed each weekday morning</p>
+<ul class="regime" id="regime" aria-label="Regime read by pillar"></ul>
+<nav class="nav"><a href="#rates">Rates</a><a href="#curve">Curve</a><a href="#inflation">Inflation</a><a href="#growth">Growth and labor</a><a href="#liquidity">Liquidity and credit</a><a href="#global">Dollar, fiscal and energy</a><a href="#calendar">Release calendar</a></nav>
+</header>
+<div class="err" id="err" hidden>Couldn't load the latest data. Refresh the page to try again.</div>
+<section class="sec" id="rates"><div class="sh"><h2>Policy rate and Treasury yields</h2><p>Cost of capital and the hurdle every deal is priced against.</p></div><div class="grid"><article class="tile" data-metric="fedfunds"><div class="th"><h3>Federal funds rate</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><p class="why">Cost of capital</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="ust2y"><div class="th"><h3>2-year Treasury</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><p class="why">Tracks where policy is headed</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="ust10y"><div class="th"><h3>10-year Treasury</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><div class="spark" data-series="ust10y"></div><p class="why">Benchmark hurdle rate; drives mortgage and cap-rate pricing</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="ust30y"><div class="th"><h3>30-year Treasury</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><p class="why">Long-duration hurdle; term premium</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article></div></section><section class="sec" id="curve"><div class="sh"><h2>Yield curve</h2><p>Recession and growth expectations.</p></div><div class="grid"><article class="tile wide"><div class="th"><h3>Treasury curve, 1 month to 30 years</h3><span class="per">Latest close</span></div><div class="curve" id="curve-chart"></div><p class="why">Shape of the curve from bills to bonds: slope shows what the market expects for policy and growth.</p><p class="src">U.S. Treasury / market quotes</p></article><article class="tile" data-metric="curve10s2s"><div class="th"><h3>10s–2s spread</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><p class="why">Positive slope = market expects growth, not recession</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="effr"><div class="th"><h3>Effective fed funds</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><p class="why">Where overnight money actually trades</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article></div></section><section class="sec" id="inflation"><div class="sh"><h2>Inflation</h2><p>Purchasing power and real returns.</p></div><div class="grid"><article class="tile" data-metric="cpi"><div class="th"><h3>CPI, headline</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><p class="why">What consumers pay; drives rent escalators and COLAs</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="corecpi"><div class="th"><h3>CPI, core</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><p class="why">Ex food and energy; underlying trend</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="pce"><div class="th"><h3>PCE, headline</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><p class="why">Broader price measure</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="corepce"><div class="th"><h3>PCE, core</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><div class="spark" data-series="corepce"></div><p class="why">The Fed's target gauge (2%)</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article></div></section><section class="sec" id="growth"><div class="sh"><h2>Growth and labor</h2><p>Economic expansion, and consumer and business health.</p></div><div class="grid"><article class="tile" data-metric="gdp"><div class="th"><h3>Real GDP growth</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><div class="spark" data-series="gdp"></div><p class="why">Expansion vs contraction</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="unemp"><div class="th"><h3>Unemployment rate</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><p class="why">Consumer health</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="payrolls"><div class="th"><h3>Nonfarm payrolls</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><p class="why">Job creation; tenant and demand pipeline</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article></div></section><section class="sec" id="liquidity"><div class="sh"><h2>Liquidity and credit</h2><p>Monetary liquidity, risk appetite and financing availability.</p></div><div class="grid"><article class="tile" data-metric="m2"><div class="th"><h3>M2 money supply</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><div class="spark" data-series="m2"></div><p class="why">Monetary liquidity trend</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="hyoas"><div class="th"><h3>High-yield spread</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><div class="spark" data-series="hyoas"></div><p class="why">Market perception of risk</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="igoas"><div class="th"><h3>Investment-grade spread</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><p class="why">Cost of high-quality corporate credit</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="sloos"><div class="th"><h3>Bank lending standards</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><p class="why">Availability of financing (Senior Loan Officer survey)</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article></div></section><section class="sec" id="global"><div class="sh"><h2>Dollar, fiscal and energy</h2><p>Global capital pressure, long-term fiscal exposure, and input costs.</p></div><div class="grid"><article class="tile" data-metric="dxy"><div class="th"><h3>Dollar index (DXY)</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><div class="spark" data-series="dxy"></div><p class="why">Global capital and currency pressure</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="deficit"><div class="th"><h3>Federal deficit</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><p class="why">Treasury supply pressure on long yields</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="debtpublic"><div class="th"><h3>Debt held by public</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><p class="why">Long-term fiscal exposure</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="grossdebt"><div class="th"><h3>Gross national debt</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><p class="why">Total federal obligations</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="wti"><div class="th"><h3>WTI crude</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><div class="spark" data-series="wti"></div><p class="why">Inflation and industrial economics</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="brent"><div class="th"><h3>Brent crude</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><div class="spark" data-series="brent"></div><p class="why">Global oil benchmark</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article><article class="tile" data-metric="natgas"><div class="th"><h3>Natural gas</h3><span class="per" data-f="period"></span></div><div class="big sk" data-f="display">&nbsp;</div><div class="chg" data-f="change"></div><p class="why">Utility and operating costs</p><p class="src"><span data-f="source"></span> · <span data-f="asOf"></span></p><p class="src nxt">Next: <span data-f="next"></span></p></article></div></section>
+<section class="sec" id="calendar"><div class="sh"><h2>Release calendar</h2><p>Scheduled data and Fed events that move the board. Times are Eastern; high-impact releases in red.</p></div>
+<div class="grid"><article class="tile wide"><div class="th"><h3>Next high-impact releases</h3><span class="per">Upcoming</span></div><div class="next" id="nextup"></div></article>
+<article class="tile wide"><div class="caltop"><h3>Upcoming schedule</h3><div class="seg" role="group" aria-label="Impact filter"><button type="button" data-imp="all" aria-pressed="true">All</button><button type="button" data-imp="high" aria-pressed="false">High impact</button></div></div>
+<div class="tblwrap"><table class="tbl"><thead><tr><th>Date</th><th>Time</th><th>Release</th><th class="hn">Covers</th><th class="hn">Moves on this board</th><th>Impact</th><th class="hn">Status</th></tr></thead><tbody id="cal"></tbody></table></div>
+<p class="src">Federal Reserve, BLS, BEA, Census and Treasury release calendars. Estimated dates follow the agency's usual timing and are confirmed at each refresh. This week's rows are shaded.</p></article></div></section>
+<footer class="foot"><p>Figures are the latest official prints or market closes; color shows direction relative to an investor seeking cheaper, more available capital (red = headwind). The summary and pillar reads are analyst judgment, not data. Not investment advice.</p><p>© RC Quantum Automation · <a href="https://rcqsignals.com">rcqsignals.com</a></p></footer>
+</main>
+<script src="assets/d3.v7.9.0.min.js"></script>
+<script>(function(){
+const FILES=['metrics','history','curve','brief','regime','calendar','meta'];
+const D={};
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const css=(v)=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const unsk=(el)=>el&&el.classList.remove('sk');
+
+function tip(el){let t=el.querySelector('.tip');if(!t){t=document.createElement('div');t.className='tip';t.hidden=true;el.append(t);}return t;}
+function place(el,t,x,y){const w=el.clientWidth;t.hidden=false;const tw=t.offsetWidth,th=t.offsetHeight;let left=x+10;if(left+tw>w)left=x-tw-10;if(left<0)left=0;let top=y-th-8;if(top<0)top=y+12;t.style.left=left+'px';t.style.top=top+'px';}
+function tipText(t,a,b){t.replaceChildren();const x=document.createElement('div');x.className='d';x.textContent=a;const y=document.createElement('div');y.textContent=b;t.append(x,y);}
+
+function header(){
+  const b=(D.brief||[])[0]||{};const be=$('#brief');be.textContent=b.headline||'';unsk(be);
+  $('#asof').textContent=b.asOf||'—';
+  const u=D.meta&&D.meta.updatedAt?new Date(D.meta.updatedAt):null;
+  $('#updated').textContent=u?u.toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZoneName:'short'}):'—';
+  const ul=$('#regime');ul.replaceChildren();
+  (D.regime||[]).forEach(r=>{const li=document.createElement('li');const p=document.createElement('span');p.className='p';p.textContent=r.pillar;const v=document.createElement('b');v.textContent=r.read;v.dataset.tone=r.tone;li.append(p,v);ul.append(li);});
+}
+function tiles(){
+  const by=Object.fromEntries((D.metrics||[]).map(m=>[m.id,m]));
+  $$('[data-metric]').forEach(t=>{const m=by[t.dataset.metric];
+    $$('[data-f]',t).forEach(el=>{const v=m?m[el.dataset.f]:'';el.textContent=v||(el.dataset.f==='display'?'—':'');unsk(el);});
+    const c=$('.chg',t);if(c)c.dataset.tone=m?m.tone:'';
+    const nx=$('.nxt',t);if(nx)nx.hidden=!(m&&m.next);
+  });
+}
+const FMT={ust10y:v=>d3.format('.2f')(v)+'%',hyoas:v=>Math.round(v*100)+' bp',dxy:d3.format('.2f'),wti:v=>'$'+d3.format('.2f')(v),brent:v=>'$'+d3.format('.2f')(v),m2:v=>'$'+d3.format('.2f')(v/1000)+'T',gdp:v=>d3.format('.1f')(v)+'%',corepce:v=>d3.format('.1f')(v)+'%'};
+const LBL={gdp:d3.utcFormat('Q%q %Y'),m2:d3.utcFormat('%b %Y'),corepce:d3.utcFormat('%b %Y')};
+const fmtDate=d3.utcFormat('%b %-d, %Y');
+function sparks(){
+  $$('.spark').forEach(el=>{el.replaceChildren();
+    const s=el.dataset.series;const pts=(D.history||[]).filter(r=>r.series===s).map(r=>({t:new Date(r.date+'T00:00:00Z'),v:+r.value})).sort((a,b)=>a.t-b.t);
+    if(pts.length<2)return;
+    const W=el.clientWidth||200,H=48,pad=4,col=css('--accent');
+    const x=d3.scaleUtc(d3.extent(pts,p=>p.t),[pad,W-pad]);const e=d3.extent(pts,p=>p.v);const sp=(e[1]-e[0])||1;
+    const y=d3.scaleLinear([e[0]-sp*.1,e[1]+sp*.1],[H-pad,pad]);
+    const svg=d3.select(el).append('svg').attr('width','100%').attr('height',H).attr('viewBox',`0 0 ${W} ${H}`).attr('preserveAspectRatio','none');
+    svg.append('path').datum(pts).attr('fill','none').attr('stroke',col).attr('stroke-width',2).attr('stroke-linecap','round').attr('stroke-linejoin','round').attr('vector-effect','non-scaling-stroke').attr('d',d3.line(p=>x(p.t),p=>y(p.v)));
+    const l=pts[pts.length-1];svg.append('circle').attr('cx',x(l.t)).attr('cy',y(l.v)).attr('r',2.5).attr('fill',col);
+    const dot=svg.append('circle').attr('r',3).attr('fill',col).attr('visibility','hidden');
+    const t=tip(el),fv=FMT[s]||String,fd=LBL[s]||fmtDate;
+    el.onpointermove=(ev)=>{const r=el.getBoundingClientRect();const mx=(ev.clientX-r.left)*(W/r.width);const p=pts[d3.leastIndex(pts,q=>Math.abs(x(q.t)-mx))];
+      dot.attr('cx',x(p.t)).attr('cy',y(p.v)).attr('visibility','visible');tipText(t,fd(p.t),fv(p.v));place(el,t,x(p.t)*(r.width/W),y(p.v));};
+    el.onpointerleave=()=>{t.hidden=true;dot.attr('visibility','hidden');};
+  });
+}
+function curve(){
+  const el=$('#curve-chart');el.replaceChildren();const pts=(D.curve||[]).map(r=>({k:r.tenor,v:+r.yield_pct}));if(!pts.length)return;
+  const W=el.clientWidth||600,H=240,col=css('--accent');
+  const svg=d3.select(el).append('svg').attr('width','100%').attr('height',H).attr('viewBox',`0 0 ${W} ${H}`);
+  const e=d3.extent(pts,p=>p.v);const y=d3.scaleLinear([Math.floor(e[0]*4)/4-.25,Math.ceil(e[1]*4)/4+.1],[H-28,16]).nice();
+  const ya=svg.append('g').attr('class','ax').call(d3.axisLeft(y).ticks(5).tickFormat(v=>d3.format('.2f')(v)+'%').tickSize(0)).attr('font-size',null).attr('font-family',null);
+  let ml=0;ya.selectAll('text').each(function(){ml=Math.max(ml,this.getComputedTextLength());});ml=Math.ceil(ml)+10;
+  ya.attr('transform',`translate(${ml},0)`);ya.select('.domain').remove();
+  const x=d3.scalePoint(pts.map(p=>p.k),[ml+20,W-28]).padding(.1);
+  svg.insert('g',':first-child').selectAll('line').data(y.ticks(5)).join('line').attr('x1',ml).attr('x2',W).attr('y1',v=>y(v)).attr('y2',v=>y(v)).attr('stroke',css('--grid'));
+  const xa=svg.append('g').attr('class','ax').attr('transform',`translate(0,${H-28})`).call(d3.axisBottom(x).tickSize(0).tickPadding(10)).attr('font-size',null).attr('font-family',null);xa.select('.domain').remove();
+  svg.append('path').datum(pts).attr('fill','none').attr('stroke',col).attr('stroke-width',2).attr('stroke-linecap','round').attr('stroke-linejoin','round').attr('d',d3.line(p=>x(p.k),p=>y(p.v)));
+  svg.append('g').selectAll('circle').data(pts).join('circle').attr('cx',p=>x(p.k)).attr('cy',p=>y(p.v)).attr('r',3.5).attr('fill',col);
+  if(W>420)svg.append('g').selectAll('text').data(pts).join('text').attr('x',p=>x(p.k)).attr('y',p=>y(p.v)-10).attr('text-anchor','middle').attr('fill',css('--fg')).attr('font-size',12).text(p=>d3.format('.2f')(p.v)+'%');
+  const t=tip(el);
+  el.onpointermove=(ev)=>{const r=el.getBoundingClientRect();const mx=(ev.clientX-r.left)*(W/r.width);const p=pts[d3.leastIndex(pts,q=>Math.abs(x(q.k)-mx))];tipText(t,p.k+' Treasury',d3.format('.3f')(p.v)+'%');place(el,t,x(p.k)*(r.width/W),y(p.v)*(r.height/H));};
+  el.onpointerleave=()=>{t.hidden=true;};
+}
+let impact='all';
+const today=()=>{const n=new Date();return new Date(Date.UTC(n.getFullYear(),n.getMonth(),n.getDate()));};
+const parse=(s)=>new Date(s+'T00:00:00Z');
+const fmtD=d3.utcFormat('%a %b %-d');
+const fmtT=(s)=>{if(!s)return '';const [h,m]=s.split(':').map(Number);return (((h+11)%12)+1)+':'+String(m).padStart(2,'0')+(h>=12?' PM':' AM')+' ET';};
+const daysTo=(s)=>Math.round((parse(s)-today())/864e5);
+const until=(n)=>n===0?'Today':n===1?'Tomorrow':'In '+n+' days';
+function upcoming(){const t0=today();return (D.calendar||[]).filter(r=>parse(r.date)>=t0).sort((a,b)=>a.date.localeCompare(b.date)||String(a.timeET).localeCompare(String(b.timeET)));}
+function calendar(){
+  const rows=upcoming();const nx=$('#nextup');nx.replaceChildren();
+  rows.filter(r=>r.impact==='high').slice(0,4).forEach(r=>{const c=document.createElement('div');c.className='nx';
+    const add=(cls,txt)=>{const s=document.createElement('span');s.className=cls;s.textContent=txt;c.append(s);};
+    add('w',until(daysTo(r.date))+' · '+fmtT(r.timeET));add('d',fmtD(parse(r.date)));add('r',r.release+' ('+r.period+')');add('m','Moves: '+r.moves);nx.append(c);});
+  if(!nx.children.length){const p=document.createElement('p');p.className='src';p.textContent='No high-impact releases on the schedule yet.';nx.append(p);}
+  const t0=today(),we=d3.utcDay.offset(t0,(7-t0.getUTCDay())%7||7);
+  const tb=$('#cal');tb.replaceChildren();
+  rows.filter(r=>impact==='all'||r.impact==='high').forEach(r=>{const tr=document.createElement('tr');if(parse(r.date)<we)tr.className='wk';
+    const td=(txt,cls)=>{const c=document.createElement('td');if(cls)c.className=cls;c.textContent=txt;tr.append(c);return c;};
+    td(fmtD(parse(r.date)),'nw');td(fmtT(r.timeET),'nw');td(r.release);td(r.period,'hn');td(r.moves,'hn');
+    const ic=document.createElement('td');const s=document.createElement('span');s.className='tag';s.dataset.impact=r.impact;s.append(document.createElement('i'),r.impact==='high'?'High':'Medium');ic.append(s);tr.append(ic);
+    const sc=td(r.status,'hn');if(r.status!=='Scheduled')sc.classList.add('est');tb.append(tr);});
+}
+$$('[data-imp]').forEach(b=>b.addEventListener('click',()=>{impact=b.dataset.imp;$$('[data-imp]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));calendar();}));
+function draw(){header();tiles();sparks();curve();calendar();}
+let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{sparks();curve();},150);});
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{sparks();curve();});
+const bust='?t='+Math.floor(Date.now()/60000);
+Promise.all(FILES.map(f=>fetch('data/'+f+'.json'+bust,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(f);return r.json();}).then(j=>{D[f]=j;}).catch(()=>{D[f]=null;})))
+ .then(()=>{if(!D.metrics)$('#err').hidden=false;draw();});
+})();
+</script>
+</body>
+</html>

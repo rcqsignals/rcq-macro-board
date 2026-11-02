@@ -1,0 +1,47 @@
+[
+{
+"pillar": "Cost of capital",
+"read": "Rising",
+"tone": "bad"
+},
+{
+"pillar": "Inflation",
+"read": "Re-accelerating",
+"tone": "bad"
+},
+{
+"pillar": "Growth",
+"read": "Strong",
+"tone": "good"
+},
+{
+"pillar": "Labor",
+"read": "Cooling",
+"tone": "warn"
+},
+{
+"pillar": "Liquidity",
+"read": "Nominal up, real flat",
+"tone": "warn"
+},
+{
+"pillar": "Credit",
+"read": "Widening from tight",
+"tone": "warn"
+},
+{
+"pillar": "Dollar",
+"read": "Firm",
+"tone": "warn"
+},
+{
+"pillar": "Fiscal",
+"read": "Deteriorating",
+"tone": "bad"
+},
+{
+"pillar": "Energy",
+"read": "Shock",
+"tone": "bad"
+}
+]

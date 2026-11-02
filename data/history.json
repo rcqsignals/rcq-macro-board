@@ -1,0 +1,572 @@
+[
+{
+"series": "ust10y",
+"date": "2026-10-01",
+"value": 5.234
+},
+{
+"series": "ust10y",
+"date": "2026-10-06",
+"value": 5.271
+},
+{
+"series": "ust10y",
+"date": "2026-10-07",
+"value": 5.277
+},
+{
+"series": "ust10y",
+"date": "2026-10-08",
+"value": 5.233
+},
+{
+"series": "ust10y",
+"date": "2026-10-09",
+"value": 5.244
+},
+{
+"series": "ust10y",
+"date": "2026-10-13",
+"value": 5.217
+},
+{
+"series": "ust10y",
+"date": "2026-10-14",
+"value": 5.19
+},
+{
+"series": "ust10y",
+"date": "2026-10-15",
+"value": 5.087
+},
+{
+"series": "ust10y",
+"date": "2026-10-16",
+"value": 5.098
+},
+{
+"series": "ust10y",
+"date": "2026-10-19",
+"value": 5.136
+},
+{
+"series": "ust10y",
+"date": "2026-10-20",
+"value": 5.117
+},
+{
+"series": "ust10y",
+"date": "2026-10-21",
+"value": 5.146
+},
+{
+"series": "ust10y",
+"date": "2026-10-22",
+"value": 4.953
+},
+{
+"series": "ust10y",
+"date": "2026-10-23",
+"value": 4.988
+},
+{
+"series": "ust10y",
+"date": "2026-10-26",
+"value": 4.986
+},
+{
+"series": "ust10y",
+"date": "2026-10-27",
+"value": 4.993
+},
+{
+"series": "ust10y",
+"date": "2026-10-28",
+"value": 5.045
+},
+{
+"series": "ust10y",
+"date": "2026-10-29",
+"value": 4.989
+},
+{
+"series": "ust10y",
+"date": "2026-10-30",
+"value": 4.929
+},
+{
+"series": "hyoas",
+"date": "2026-09-18",
+"value": 2.68
+},
+{
+"series": "hyoas",
+"date": "2026-09-21",
+"value": 2.66
+},
+{
+"series": "hyoas",
+"date": "2026-09-22",
+"value": 2.68
+},
+{
+"series": "hyoas",
+"date": "2026-09-23",
+"value": 2.73
+},
+{
+"series": "hyoas",
+"date": "2026-09-24",
+"value": 2.8
+},
+{
+"series": "hyoas",
+"date": "2026-09-25",
+"value": 2.93
+},
+{
+"series": "hyoas",
+"date": "2026-09-28",
+"value": 3.02
+},
+{
+"series": "hyoas",
+"date": "2026-09-29",
+"value": 3.08
+},
+{
+"series": "hyoas",
+"date": "2026-09-30",
+"value": 3.12
+},
+{
+"series": "hyoas",
+"date": "2026-10-01",
+"value": 3.24
+},
+{
+"series": "hyoas",
+"date": "2026-10-02",
+"value": 3.1
+},
+{
+"series": "hyoas",
+"date": "2026-10-05",
+"value": 3.12
+},
+{
+"series": "hyoas",
+"date": "2026-10-06",
+"value": 3.03
+},
+{
+"series": "hyoas",
+"date": "2026-10-07",
+"value": 3.09
+},
+{
+"series": "hyoas",
+"date": "2026-10-08",
+"value": 3.15
+},
+{
+"series": "hyoas",
+"date": "2026-10-09",
+"value": 3.11
+},
+{
+"series": "hyoas",
+"date": "2026-10-12",
+"value": 3.11
+},
+{
+"series": "hyoas",
+"date": "2026-10-13",
+"value": 3.16
+},
+{
+"series": "hyoas",
+"date": "2026-10-14",
+"value": 3.25
+},
+{
+"series": "hyoas",
+"date": "2026-10-15",
+"value": 3.23
+},
+{
+"series": "hyoas",
+"date": "2026-10-16",
+"value": 3.31
+},
+{
+"series": "hyoas",
+"date": "2026-10-19",
+"value": 3.29
+},
+{
+"series": "hyoas",
+"date": "2026-10-20",
+"value": 3.33
+},
+{
+"series": "hyoas",
+"date": "2026-10-21",
+"value": 3.27
+},
+{
+"series": "hyoas",
+"date": "2026-10-22",
+"value": 3.4
+},
+{
+"series": "hyoas",
+"date": "2026-10-23",
+"value": 3.38
+},
+{
+"series": "hyoas",
+"date": "2026-10-26",
+"value": 3.3
+},
+{
+"series": "hyoas",
+"date": "2026-10-27",
+"value": 3.18
+},
+{
+"series": "hyoas",
+"date": "2026-10-28",
+"value": 3.14
+},
+{
+"series": "hyoas",
+"date": "2026-10-29",
+"value": 3.26
+},
+{
+"series": "dxy",
+"date": "2026-10-01",
+"value": 102.1
+},
+{
+"series": "dxy",
+"date": "2026-10-02",
+"value": 101.93
+},
+{
+"series": "dxy",
+"date": "2026-10-05",
+"value": 102.17
+},
+{
+"series": "dxy",
+"date": "2026-10-06",
+"value": 101.83
+},
+{
+"series": "dxy",
+"date": "2026-10-07",
+"value": 102.24
+},
+{
+"series": "dxy",
+"date": "2026-10-08",
+"value": 102.14
+},
+{
+"series": "dxy",
+"date": "2026-10-09",
+"value": 102.21
+},
+{
+"series": "dxy",
+"date": "2026-10-12",
+"value": 102.59
+},
+{
+"series": "dxy",
+"date": "2026-10-13",
+"value": 102.18
+},
+{
+"series": "dxy",
+"date": "2026-10-14",
+"value": 102.55
+},
+{
+"series": "dxy",
+"date": "2026-10-15",
+"value": 102.06
+},
+{
+"series": "dxy",
+"date": "2026-10-16",
+"value": 101.84
+},
+{
+"series": "dxy",
+"date": "2026-10-19",
+"value": 101.98
+},
+{
+"series": "dxy",
+"date": "2026-10-20",
+"value": 101.7
+},
+{
+"series": "dxy",
+"date": "2026-10-21",
+"value": 101.78
+},
+{
+"series": "dxy",
+"date": "2026-10-22",
+"value": 101.61
+},
+{
+"series": "dxy",
+"date": "2026-10-23",
+"value": 101.81
+},
+{
+"series": "dxy",
+"date": "2026-10-26",
+"value": 101.96
+},
+{
+"series": "dxy",
+"date": "2026-10-27",
+"value": 102.32
+},
+{
+"series": "dxy",
+"date": "2026-10-28",
+"value": 102.19
+},
+{
+"series": "dxy",
+"date": "2026-10-29",
+"value": 102.04
+},
+{
+"series": "dxy",
+"date": "2026-10-30",
+"value": 101.88
+},
+{
+"series": "wti",
+"date": "2026-10-07",
+"value": 88.28
+},
+{
+"series": "wti",
+"date": "2026-10-13",
+"value": 94.14
+},
+{
+"series": "wti",
+"date": "2026-10-14",
+"value": 95.09
+},
+{
+"series": "wti",
+"date": "2026-10-15",
+"value": 96.5
+},
+{
+"series": "wti",
+"date": "2026-10-16",
+"value": 99.02
+},
+{
+"series": "wti",
+"date": "2026-10-19",
+"value": 98.54
+},
+{
+"series": "wti",
+"date": "2026-10-20",
+"value": 97.82
+},
+{
+"series": "wti",
+"date": "2026-10-21",
+"value": 97.15
+},
+{
+"series": "wti",
+"date": "2026-10-22",
+"value": 99.47
+},
+{
+"series": "wti",
+"date": "2026-10-23",
+"value": 103.27
+},
+{
+"series": "wti",
+"date": "2026-10-26",
+"value": 101.76
+},
+{
+"series": "wti",
+"date": "2026-10-27",
+"value": 99.9
+},
+{
+"series": "wti",
+"date": "2026-10-28",
+"value": 102.78
+},
+{
+"series": "wti",
+"date": "2026-10-29",
+"value": 102.0
+},
+{
+"series": "wti",
+"date": "2026-10-30",
+"value": 104.12
+},
+{
+"series": "brent",
+"date": "2026-10-12",
+"value": 106.65
+},
+{
+"series": "brent",
+"date": "2026-10-13",
+"value": 105.69
+},
+{
+"series": "brent",
+"date": "2026-10-14",
+"value": 106.06
+},
+{
+"series": "brent",
+"date": "2026-10-15",
+"value": 105.92
+},
+{
+"series": "brent",
+"date": "2026-10-16",
+"value": 109.86
+},
+{
+"series": "brent",
+"date": "2026-10-19",
+"value": 106.07
+},
+{
+"series": "brent",
+"date": "2026-10-20",
+"value": 105.1
+},
+{
+"series": "brent",
+"date": "2026-10-21",
+"value": 105.07
+},
+{
+"series": "brent",
+"date": "2026-10-22",
+"value": 108.66
+},
+{
+"series": "brent",
+"date": "2026-10-23",
+"value": 111.7
+},
+{
+"series": "brent",
+"date": "2026-10-26",
+"value": 110.74
+},
+{
+"series": "brent",
+"date": "2026-10-27",
+"value": 109.41
+},
+{
+"series": "brent",
+"date": "2026-10-28",
+"value": 111.64
+},
+{
+"series": "brent",
+"date": "2026-10-29",
+"value": 110.8
+},
+{
+"series": "brent",
+"date": "2026-10-30",
+"value": 113.43
+},
+{
+"series": "m2",
+"date": "2026-05-01",
+"value": 22980.9
+},
+{
+"series": "m2",
+"date": "2026-06-01",
+"value": 23077.7
+},
+{
+"series": "m2",
+"date": "2026-07-01",
+"value": 23177.4
+},
+{
+"series": "m2",
+"date": "2026-08-01",
+"value": 23300.9
+},
+{
+"series": "m2",
+"date": "2026-09-01",
+"value": 23413.9
+},
+{
+"series": "gdp",
+"date": "2025-10-01",
+"value": 0.5
+},
+{
+"series": "gdp",
+"date": "2026-01-01",
+"value": 2.5
+},
+{
+"series": "gdp",
+"date": "2026-04-01",
+"value": 2.2
+},
+{
+"series": "gdp",
+"date": "2026-07-01",
+"value": 3.4
+},
+{
+"series": "corepce",
+"date": "2026-06-01",
+"value": 3.0
+},
+{
+"series": "corepce",
+"date": "2026-07-01",
+"value": 3.0
+},
+{
+"series": "corepce",
+"date": "2026-08-01",
+"value": 3.0
+},
+{
+"series": "corepce",
+"date": "2026-09-01",
+"value": 3.1
+}
+]

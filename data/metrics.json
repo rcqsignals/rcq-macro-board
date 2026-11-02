@@ -1,0 +1,242 @@
+[
+{
+"id": "fedfunds",
+"display": "3.75\u20134.00%",
+"change": "Held Oct 28 \u00b7 +25 bp in Sep \u00b7 2 dissents for a hike",
+"tone": "bad",
+"period": "Target range",
+"asOf": "Oct 28, 2026",
+"source": "FOMC statement",
+"next": "Dec FOMC (mkt ~80% odds of +25 bp)"
+},
+{
+"id": "effr",
+"display": "3.88%",
+"change": "Effective rate inside target range",
+"tone": "neutral",
+"period": "Effective",
+"asOf": "Oct 30, 2026",
+"source": "NY Fed via StockMarketWatch",
+"next": ""
+},
+{
+"id": "ust2y",
+"display": "4.56%",
+"change": "\u25bc 32 bp vs 1 mo \u00b7 \u25b2 109 bp YTD",
+"tone": "neutral",
+"period": "Par yield",
+"asOf": "Oct 30, 2026",
+"source": "U.S. Treasury par curve",
+"next": ""
+},
+{
+"id": "ust10y",
+"display": "4.94%",
+"change": "\u25bc 35 bp vs 1 mo \u00b7 \u25b2 75 bp YTD",
+"tone": "neutral",
+"period": "Par yield",
+"asOf": "Oct 30, 2026",
+"source": "U.S. Treasury par curve",
+"next": ""
+},
+{
+"id": "ust30y",
+"display": "5.31%",
+"change": "\u25bc 33 bp vs 1 mo \u00b7 \u25b2 45 bp YTD",
+"tone": "neutral",
+"period": "Par yield",
+"asOf": "Oct 30, 2026",
+"source": "U.S. Treasury par curve",
+"next": ""
+},
+{
+"id": "curve10s2s",
+"display": "+38 bp",
+"change": "Positive slope \u00b7 was +29 bp Oct 27",
+"tone": "good",
+"period": "10Y minus 2Y",
+"asOf": "Oct 30, 2026",
+"source": "FRED T10Y2Y",
+"next": ""
+},
+{
+"id": "cpi",
+"display": "3.7%",
+"change": "\u25b2 from 3.4% in Aug \u00b7 +0.6% m/m",
+"tone": "bad",
+"period": "Sep, y/y",
+"asOf": "Oct 14, 2026",
+"source": "BLS CPI",
+"next": "Nov 10 (Oct data)"
+},
+{
+"id": "corecpi",
+"display": "2.6%",
+"change": "\u25b2 from 2.4% in Aug \u00b7 +0.3% m/m",
+"tone": "warn",
+"period": "Sep, y/y",
+"asOf": "Oct 14, 2026",
+"source": "BLS CPI",
+"next": "Nov 10 (Oct data)"
+},
+{
+"id": "pce",
+"display": "3.6%",
+"change": "\u25b2 from 3.4% in Aug \u00b7 +0.5% m/m",
+"tone": "bad",
+"period": "Sep, y/y",
+"asOf": "Oct 29, 2026",
+"source": "BEA Personal Income & Outlays",
+"next": "Nov 25"
+},
+{
+"id": "corepce",
+"display": "3.1%",
+"change": "\u25b2 from 3.0% in Aug \u00b7 Fed target 2%",
+"tone": "bad",
+"period": "Sep, y/y",
+"asOf": "Oct 29, 2026",
+"source": "BEA Personal Income & Outlays",
+"next": "Nov 25"
+},
+{
+"id": "m2",
+"display": "$23.41T",
+"change": "\u25b2 5.7% y/y \u00b7 real M2 \u25bc 0.2% m/m",
+"tone": "warn",
+"period": "Sep, SA",
+"asOf": "Oct 27, 2026",
+"source": "Fed H.6 via FRED M2SL",
+"next": "Nov 24"
+},
+{
+"id": "gdp",
+"display": "3.4%",
+"change": "\u25b2 from 2.2% in Q2 \u00b7 advance estimate",
+"tone": "good",
+"period": "Q3, SAAR",
+"asOf": "Oct 29, 2026",
+"source": "BEA GDP advance",
+"next": "Nov 25 (2nd est.)"
+},
+{
+"id": "unemp",
+"display": "4.2%",
+"change": "\u25b2 from 4.1% in Aug \u00b7 labor force grew",
+"tone": "warn",
+"period": "Sep",
+"asOf": "Oct 2, 2026",
+"source": "BLS Employment Situation",
+"next": "Oct report, early Nov"
+},
+{
+"id": "payrolls",
+"display": "+29K",
+"change": "\u25bc from +133K in Aug (rev.) \u00b7 est. was +84K",
+"tone": "bad",
+"period": "Sep, nonfarm",
+"asOf": "Oct 2, 2026",
+"source": "BLS Employment Situation",
+"next": "Oct report, early Nov"
+},
+{
+"id": "hyoas",
+"display": "326 bp",
+"change": "\u25b2 14 bp vs Sep 30 \u00b7 \u25b2 58 bp from Sep 18",
+"tone": "warn",
+"period": "HY option-adj. spread",
+"asOf": "Oct 29, 2026",
+"source": "ICE BofA via FRED",
+"next": "Daily"
+},
+{
+"id": "igoas",
+"display": "91 bp",
+"change": "\u25b2 6 bp on the week",
+"tone": "warn",
+"period": "IG option-adj. spread",
+"asOf": "Oct 27, 2026",
+"source": "ICE BofA via FRED",
+"next": "Daily"
+},
+{
+"id": "sloos",
+"display": "Unchanged",
+"change": "C&I flat \u00b7 CRE easing most since 2022 \u00b7 cards tighter",
+"tone": "neutral",
+"period": "Q2 survey (July)",
+"asOf": "Aug 3, 2026",
+"source": "Fed SLOOS",
+"next": "Oct survey, expected early Nov"
+},
+{
+"id": "dxy",
+"display": "101.96",
+"change": "\u25b2 2.2% y/y \u00b7 near 52-wk high 102.95",
+"tone": "warn",
+"period": "ICE close",
+"asOf": "Oct 30, 2026",
+"source": "ICE via CNBC",
+"next": "Daily"
+},
+{
+"id": "deficit",
+"display": "$1.99T",
+"change": "\u25b2 $217B vs FY25 \u00b7 ~6.1% of GDP",
+"tone": "bad",
+"period": "FY2026",
+"asOf": "Oct 16, 2026",
+"source": "Treasury Monthly Statement",
+"next": "Oct MTS, mid-Nov"
+},
+{
+"id": "debtpublic",
+"display": "$32.4T",
+"change": "\u25b2 $2.1T in FY26 \u00b7 ~100% of GDP",
+"tone": "bad",
+"period": "Held by public, FY-end",
+"asOf": "Oct 16, 2026",
+"source": "Treasury MTS / AAF",
+"next": ""
+},
+{
+"id": "grossdebt",
+"display": "$40.33T",
+"change": "Passed $40T in Aug \u00b7 net interest >$1T/yr",
+"tone": "bad",
+"period": "Gross, Debt to the Penny",
+"asOf": "Oct 14, 2026",
+"source": "Treasury via Yahoo Finance",
+"next": "Daily"
+},
+{
+"id": "wti",
+"display": "$104.12",
+"change": "\u25b2 15.2% in Oct \u00b7 \u25b2 69.7% y/y",
+"tone": "bad",
+"period": "Front-month settle",
+"asOf": "Oct 30, 2026",
+"source": "NYMEX via Investing.com",
+"next": "Daily"
+},
+{
+"id": "brent",
+"display": "$113.43",
+"change": "\u25b2 13.6% in Oct \u00b7 Hormuz risk premium",
+"tone": "bad",
+"period": "Front-month",
+"asOf": "Oct 30, 2026",
+"source": "ICE via Investing.com",
+"next": "Daily"
+},
+{
+"id": "natgas",
+"display": "$2.90",
+"change": "per MMBtu \u00b7 energy CPI \u25b2 20.4% y/y",
+"tone": "neutral",
+"period": "Henry Hub",
+"asOf": "Oct 30, 2026",
+"source": "OilPriceAPI / BLS",
+"next": "Daily"
+}
+]

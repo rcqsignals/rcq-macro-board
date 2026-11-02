@@ -1,0 +1,232 @@
+[
+{
+"date": "2026-11-02",
+"timeET": "14:00",
+"release": "Senior Loan Officer Survey",
+"period": "Q3 2026",
+"moves": "Bank lending standards",
+"agency": "Federal Reserve",
+"impact": "high",
+"status": "Scheduled"
+},
+{
+"date": "2026-11-03",
+"timeET": "10:00",
+"release": "JOLTS job openings",
+"period": "Sep 2026",
+"moves": "Unemployment, payrolls",
+"agency": "BLS",
+"impact": "med",
+"status": "Scheduled"
+},
+{
+"date": "2026-11-06",
+"timeET": "08:30",
+"release": "Employment Situation",
+"period": "Oct 2026",
+"moves": "Unemployment, payrolls",
+"agency": "BLS",
+"impact": "high",
+"status": "Scheduled"
+},
+{
+"date": "2026-11-10",
+"timeET": "08:30",
+"release": "Consumer Price Index",
+"period": "Oct 2026",
+"moves": "CPI headline, CPI core",
+"agency": "BLS",
+"impact": "high",
+"status": "Scheduled"
+},
+{
+"date": "2026-11-12",
+"timeET": "14:00",
+"release": "Monthly Treasury Statement",
+"period": "Oct 2026",
+"moves": "Federal deficit",
+"agency": "Treasury",
+"impact": "med",
+"status": "Estimated"
+},
+{
+"date": "2026-11-13",
+"timeET": "08:30",
+"release": "Producer Price Index",
+"period": "Oct 2026",
+"moves": "Inflation pipeline",
+"agency": "BLS",
+"impact": "med",
+"status": "Scheduled"
+},
+{
+"date": "2026-11-17",
+"timeET": "08:30",
+"release": "Retail sales, advance",
+"period": "Oct 2026",
+"moves": "Growth",
+"agency": "Census",
+"impact": "med",
+"status": "Scheduled"
+},
+{
+"date": "2026-11-18",
+"timeET": "14:00",
+"release": "FOMC minutes",
+"period": "Oct 27\u201328 meeting",
+"moves": "Federal funds rate",
+"agency": "Federal Reserve",
+"impact": "med",
+"status": "Scheduled"
+},
+{
+"date": "2026-11-24",
+"timeET": "13:00",
+"release": "H.6 Money Stock",
+"period": "Oct 2026",
+"moves": "M2 money supply",
+"agency": "Federal Reserve",
+"impact": "med",
+"status": "Scheduled"
+},
+{
+"date": "2026-11-25",
+"timeET": "08:30",
+"release": "GDP, second estimate",
+"period": "Q3 2026",
+"moves": "Real GDP growth",
+"agency": "BEA",
+"impact": "high",
+"status": "Scheduled"
+},
+{
+"date": "2026-11-25",
+"timeET": "08:30",
+"release": "Personal Income & Outlays",
+"period": "Oct 2026",
+"moves": "PCE headline, PCE core",
+"agency": "BEA",
+"impact": "high",
+"status": "Scheduled"
+},
+{
+"date": "2026-11-25",
+"timeET": "14:00",
+"release": "Beige Book",
+"period": "Nov 2026",
+"moves": "Growth, labor",
+"agency": "Federal Reserve",
+"impact": "med",
+"status": "Scheduled"
+},
+{
+"date": "2026-12-01",
+"timeET": "10:00",
+"release": "JOLTS job openings",
+"period": "Oct 2026",
+"moves": "Unemployment, payrolls",
+"agency": "BLS",
+"impact": "med",
+"status": "Scheduled"
+},
+{
+"date": "2026-12-04",
+"timeET": "08:30",
+"release": "Employment Situation",
+"period": "Nov 2026",
+"moves": "Unemployment, payrolls",
+"agency": "BLS",
+"impact": "high",
+"status": "Scheduled"
+},
+{
+"date": "2026-12-09",
+"timeET": "14:00",
+"release": "FOMC rate decision + projections",
+"period": "Dec 8\u20139 meeting",
+"moves": "Federal funds rate, yields",
+"agency": "Federal Reserve",
+"impact": "high",
+"status": "Scheduled"
+},
+{
+"date": "2026-12-10",
+"timeET": "08:30",
+"release": "Consumer Price Index",
+"period": "Nov 2026",
+"moves": "CPI headline, CPI core",
+"agency": "BLS",
+"impact": "high",
+"status": "Scheduled"
+},
+{
+"date": "2026-12-10",
+"timeET": "14:00",
+"release": "Monthly Treasury Statement",
+"period": "Nov 2026",
+"moves": "Federal deficit",
+"agency": "Treasury",
+"impact": "med",
+"status": "Estimated"
+},
+{
+"date": "2026-12-15",
+"timeET": "08:30",
+"release": "Producer Price Index",
+"period": "Nov 2026",
+"moves": "Inflation pipeline",
+"agency": "BLS",
+"impact": "med",
+"status": "Scheduled"
+},
+{
+"date": "2026-12-16",
+"timeET": "08:30",
+"release": "Retail sales, advance",
+"period": "Nov 2026",
+"moves": "Growth",
+"agency": "Census",
+"impact": "med",
+"status": "Scheduled"
+},
+{
+"date": "2026-12-22",
+"timeET": "13:00",
+"release": "H.6 Money Stock",
+"period": "Nov 2026",
+"moves": "M2 money supply",
+"agency": "Federal Reserve",
+"impact": "med",
+"status": "Scheduled"
+},
+{
+"date": "2026-12-23",
+"timeET": "08:30",
+"release": "GDP, third estimate",
+"period": "Q3 2026",
+"moves": "Real GDP growth",
+"agency": "BEA",
+"impact": "high",
+"status": "Scheduled"
+},
+{
+"date": "2026-12-23",
+"timeET": "08:30",
+"release": "Personal Income & Outlays",
+"period": "Nov 2026",
+"moves": "PCE headline, PCE core",
+"agency": "BEA",
+"impact": "high",
+"status": "Scheduled"
+},
+{
+"date": "2026-12-30",
+"timeET": "14:00",
+"release": "FOMC minutes",
+"period": "Dec 8\u20139 meeting",
+"moves": "Federal funds rate",
+"agency": "Federal Reserve",
+"impact": "med",
+"status": "Scheduled"
+}
+]
