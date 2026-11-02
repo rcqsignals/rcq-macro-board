@@ -10,6 +10,7 @@ A scheduled Claude task runs each weekday ~5:47 AM PT. It refreshes the readings
 - `data/` — `metrics`, `history`, `curve`, `brief`, `regime`, `calendar`, `meta` (last update time)
 - `assets/` — RCQ logo layers
 - `_headers` — no-cache on `data/` so viewers always get the latest numbers
+- `SCHEMA.md` — the data contract for `data/*.json` (machine-readable fields, units, redistribution flags)
 
 ## Cloudflare Pages settings
 - Framework preset: None · Build command: *(empty)* · Output directory: `/`
