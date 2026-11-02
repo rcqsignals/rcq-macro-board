@@ -1,0 +1,9 @@
+{
+  // Cloudflare Workers static-assets config for macro.rcqsignals.com
+  "name": "rcq-macro-board",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./",
+    "not_found_handling": "single-page-application"
+  }
+}
