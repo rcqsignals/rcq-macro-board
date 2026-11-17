@@ -47,79 +47,48 @@
  },
  {
   "id": "ust2y",
-  "display": "4.88%",
-  "change": "▲ 9 bp vs 1 mo · ▲ 141 bp YTD",
+  "display": "4.83%",
+  "change": "▲ 4 bp vs 1 mo · ▲ 136 bp YTD",
   "tone": "warn",
   "period": "Par yield",
-  "asOf": "Nov 13, 2026",
+  "asOf": "Nov 16, 2026",
   "source": "U.S. Treasury par curve",
   "next": "",
   "category": "rates",
-  "value": 4.88,
+  "value": 4.83,
   "unit": "pct",
   "prior": 4.79,
   "prior_label": "1 month earlier (Oct 13)",
   "changes": [
    {
     "vs": "1m",
-    "value": 0.09,
+    "value": 0.04,
     "unit": "pct_pt"
    },
    {
     "vs": "ytd",
-    "value": 1.41,
+    "value": 1.36,
     "unit": "pct_pt"
    }
   ],
-  "as_of_date": "2026-11-13",
-  "period_code": "2026-11-13",
+  "as_of_date": "2026-11-16",
+  "period_code": "2026-11-16",
   "next_release_date": null,
   "redistribution": "public_domain"
  },
  {
   "id": "ust10y",
-  "display": "5.15%",
-  "change": "▼ 6 bp vs 1 mo · ▲ 97 bp YTD",
+  "display": "5.12%",
+  "change": "▼ 9 bp vs 1 mo · ▲ 94 bp YTD",
   "tone": "warn",
   "period": "Par yield",
-  "asOf": "Nov 13, 2026",
+  "asOf": "Nov 16, 2026",
   "source": "U.S. Treasury par curve",
   "next": "",
   "category": "rates",
-  "value": 5.15,
+  "value": 5.12,
   "unit": "pct",
   "prior": 5.21,
-  "prior_label": "1 month earlier (Oct 13)",
-  "changes": [
-   {
-    "vs": "1m",
-    "value": -0.06,
-    "unit": "pct_pt"
-   },
-   {
-    "vs": "ytd",
-    "value": 0.97,
-    "unit": "pct_pt"
-   }
-  ],
-  "as_of_date": "2026-11-13",
-  "period_code": "2026-11-13",
-  "next_release_date": null,
-  "redistribution": "public_domain"
- },
- {
-  "id": "ust30y",
-  "display": "5.47%",
-  "change": "▼ 9 bp vs 1 mo · ▲ 63 bp YTD",
-  "tone": "warn",
-  "period": "Par yield",
-  "asOf": "Nov 13, 2026",
-  "source": "U.S. Treasury par curve",
-  "next": "",
-  "category": "rates",
-  "value": 5.47,
-  "unit": "pct",
-  "prior": 5.56,
   "prior_label": "1 month earlier (Oct 13)",
   "changes": [
    {
@@ -129,43 +98,74 @@
    },
    {
     "vs": "ytd",
-    "value": 0.63,
+    "value": 0.94,
     "unit": "pct_pt"
    }
   ],
-  "as_of_date": "2026-11-13",
-  "period_code": "2026-11-13",
+  "as_of_date": "2026-11-16",
+  "period_code": "2026-11-16",
+  "next_release_date": null,
+  "redistribution": "public_domain"
+ },
+ {
+  "id": "ust30y",
+  "display": "5.46%",
+  "change": "▼ 10 bp vs 1 mo · ▲ 62 bp YTD",
+  "tone": "warn",
+  "period": "Par yield",
+  "asOf": "Nov 16, 2026",
+  "source": "U.S. Treasury par curve",
+  "next": "",
+  "category": "rates",
+  "value": 5.46,
+  "unit": "pct",
+  "prior": 5.56,
+  "prior_label": "1 month earlier (Oct 13)",
+  "changes": [
+   {
+    "vs": "1m",
+    "value": -0.1,
+    "unit": "pct_pt"
+   },
+   {
+    "vs": "ytd",
+    "value": 0.62,
+    "unit": "pct_pt"
+   }
+  ],
+  "as_of_date": "2026-11-16",
+  "period_code": "2026-11-16",
   "next_release_date": null,
   "redistribution": "public_domain"
  },
  {
   "id": "curve10s2s",
-  "display": "+27 bp",
-  "change": "Positive, flattening · ▲ 3 bp vs Nov 12",
+  "display": "+29 bp",
+  "change": "Positive · ▲ 2 bp vs Nov 13 · ▼ 5 bp vs Nov 3",
   "tone": "neutral",
   "period": "10Y minus 2Y",
-  "asOf": "Nov 13, 2026",
+  "asOf": "Nov 16, 2026",
   "source": "U.S. Treasury par curve (10Y−2Y)",
   "next": "",
   "category": "curve",
-  "value": 27,
+  "value": 29,
   "unit": "bp",
-  "prior": 24,
-  "prior_label": "Nov 12 2026",
+  "prior": 27,
+  "prior_label": "Nov 13 2026",
   "changes": [
    {
-    "vs": "since_2026-11-12",
-    "value": 3,
+    "vs": "since_2026-11-13",
+    "value": 2,
     "unit": "bp"
    },
    {
     "vs": "since_2026-11-03",
-    "value": -7,
+    "value": -5,
     "unit": "bp"
    }
   ],
-  "as_of_date": "2026-11-13",
-  "period_code": "2026-11-13",
+  "as_of_date": "2026-11-16",
+  "period_code": "2026-11-16",
   "next_release_date": null,
   "redistribution": "public_domain"
  },
@@ -449,32 +449,32 @@
  },
  {
   "id": "dxy",
-  "display": "103.17",
-  "change": "▲ ~0.9% on wk · new 52-wk high, 19-mo high",
+  "display": "103.58",
+  "change": "▲ 0.2% Nov 16 · ▲ 1.7% vs Nov 3 · 19-mo high",
   "tone": "warn",
   "period": "ICE close",
-  "asOf": "Nov 13, 2026",
+  "asOf": "Nov 16, 2026",
   "source": "ICE close (market reports)",
   "next": "Daily",
   "category": "dollar",
-  "value": 103.17,
+  "value": 103.58,
   "unit": "index",
-  "prior": 101.87,
-  "prior_label": "Nov 3 2026",
+  "prior": 103.41,
+  "prior_label": "Nov 13 2026",
   "changes": [
    {
-    "vs": "1w",
-    "value": 0.9,
+    "vs": "since_2026-11-13",
+    "value": 0.16,
     "unit": "pct"
    },
    {
     "vs": "since_2026-11-03",
-    "value": 1.3,
+    "value": 1.7,
     "unit": "pct"
    }
   ],
-  "as_of_date": "2026-11-13",
-  "period_code": "2026-11-13",
+  "as_of_date": "2026-11-16",
+  "period_code": "2026-11-16",
   "next_release_date": null,
   "redistribution": "licensed_restricted"
  },
@@ -558,68 +558,63 @@
  },
  {
   "id": "wti",
-  "display": "$88.56",
-  "change": "▼ 0.2% Nov 13 · ▼ 14.9% MTD, 2nd weekly loss",
+  "display": "$85.72",
+  "change": "▼ 3.2% Nov 16 · ▼ 17.7% MTD",
   "tone": "warn",
   "period": "Front-month settle",
-  "asOf": "Nov 13, 2026",
+  "asOf": "Nov 16, 2026",
   "source": "NYMEX via market reports",
   "next": "Daily",
   "category": "energy",
-  "value": 88.56,
+  "value": 85.72,
   "unit": "usd_bbl",
-  "prior": 88.74,
-  "prior_label": "Nov 12 2026",
+  "prior": 88.56,
+  "prior_label": "Nov 13 2026",
   "changes": [
    {
-    "vs": "since_2026-11-12",
-    "value": -0.2,
+    "vs": "since_2026-11-13",
+    "value": -3.2,
     "unit": "pct"
    },
    {
     "vs": "mtd",
-    "value": -14.9,
+    "value": -17.7,
     "unit": "pct"
    }
   ],
-  "as_of_date": "2026-11-13",
-  "period_code": "2026-11-13",
+  "as_of_date": "2026-11-16",
+  "period_code": "2026-11-16",
   "next_release_date": null,
   "redistribution": "licensed_restricted"
  },
  {
   "id": "brent",
-  "display": "$95.84",
-  "change": "Flat Nov 13 · ▼ 2.5% wk · ▼ 15.5% MTD",
+  "display": "$92.44",
+  "change": "▼ 3.5% Nov 16 · ▼ 18.5% MTD",
   "tone": "warn",
   "period": "Front-month",
-  "asOf": "Nov 13, 2026",
+  "asOf": "Nov 16, 2026",
   "source": "ICE via market reports",
   "next": "Daily",
   "category": "energy",
-  "value": 95.84,
+  "value": 92.44,
   "unit": "usd_bbl",
-  "prior": 95.82,
-  "prior_label": "Nov 12 2026",
+  "prior": 95.84,
+  "prior_label": "Nov 13 2026",
   "changes": [
    {
-    "vs": "since_2026-11-12",
-    "value": 0.0,
-    "unit": "pct"
-   },
-   {
-    "vs": "1w",
-    "value": -2.5,
+    "vs": "since_2026-11-13",
+    "value": -3.5,
     "unit": "pct"
    },
    {
     "vs": "mtd",
-    "value": -15.5,
+    "value": -18.5,
     "unit": "pct"
    }
   ],
-  "as_of_date": "2026-11-13",
-  "period_code": "2026-11-13",
+  "as_of_date": "2026-11-16",
+  "period_code": "2026-11-16",
   "next_release_date": null,
   "redistribution": "licensed_restricted"
  },
