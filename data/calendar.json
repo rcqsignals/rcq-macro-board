@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-11-10",
-  "timeET": "08:30",
-  "release": "Consumer Price Index",
-  "period": "Oct 2026",
-  "moves": "CPI headline, CPI core",
-  "agency": "BLS",
-  "impact": "high",
-  "status": "Scheduled"
- },
- {
   "date": "2026-11-12",
   "timeET": "14:00",
   "release": "Monthly Treasury Statement",
@@ -215,6 +205,16 @@
   "release": "Employment Situation",
   "period": "Dec 2026",
   "moves": "Unemployment, payrolls",
+  "agency": "BLS",
+  "impact": "high",
+  "status": "Scheduled"
+ },
+ {
+  "date": "2027-01-13",
+  "timeET": "08:30",
+  "release": "Consumer Price Index",
+  "period": "Dec 2026",
+  "moves": "CPI headline, CPI core",
   "agency": "BLS",
   "impact": "high",
   "status": "Scheduled"
