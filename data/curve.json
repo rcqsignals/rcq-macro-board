@@ -17,14 +17,14 @@
  },
  {
   "tenor": "2Y",
-  "yield_pct": 4.79
+  "yield_pct": 4.8
  },
  {
   "tenor": "10Y",
-  "yield_pct": 5.1
+  "yield_pct": 5.07
  },
  {
   "tenor": "30Y",
-  "yield_pct": 5.46
+  "yield_pct": 5.41
  }
 ]

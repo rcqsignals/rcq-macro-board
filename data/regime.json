@@ -26,12 +26,12 @@
  },
  {
   "pillar": "Credit",
-  "read": "Tight, easing",
+  "read": "Widening",
   "tone": "warn"
  },
  {
   "pillar": "Dollar",
-  "read": "Strong",
+  "read": "Strong, rising",
   "tone": "warn"
  },
  {
@@ -41,7 +41,7 @@
  },
  {
   "pillar": "Energy",
-  "read": "Shock easing",
-  "tone": "warn"
+  "read": "Easing",
+  "tone": "neutral"
  }
 ]
