@@ -1,7 +1,7 @@
 [
  {
   "pillar": "Cost of capital",
-  "read": "High, rising",
+  "read": "High, hikes priced",
   "tone": "bad"
  },
  {
@@ -31,7 +31,7 @@
  },
  {
   "pillar": "Dollar",
-  "read": "Strong, rising",
+  "read": "Strong",
   "tone": "warn"
  },
  {

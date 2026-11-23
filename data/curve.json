@@ -1,7 +1,7 @@
 [
  {
   "tenor": "1M",
-  "yield_pct": 4.1
+  "yield_pct": 4.19
  },
  {
   "tenor": "3M",
@@ -9,22 +9,22 @@
  },
  {
   "tenor": "6M",
-  "yield_pct": 4.42
+  "yield_pct": 4.38
  },
  {
   "tenor": "1Y",
-  "yield_pct": 4.65
+  "yield_pct": 4.51
  },
  {
   "tenor": "2Y",
-  "yield_pct": 4.8
+  "yield_pct": 4.63
  },
  {
   "tenor": "10Y",
-  "yield_pct": 5.07
+  "yield_pct": 4.92
  },
  {
   "tenor": "30Y",
-  "yield_pct": 5.41
+  "yield_pct": 5.31
  }
 ]

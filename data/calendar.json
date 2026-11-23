@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-11-13",
-  "timeET": "08:30",
-  "release": "Producer Price Index",
-  "period": "Oct 2026",
-  "moves": "Inflation pipeline",
-  "agency": "BLS",
-  "impact": "med",
-  "status": "Scheduled"
- },
- {
   "date": "2026-11-17",
   "timeET": "08:30",
   "release": "Retail sales, advance",
@@ -23,7 +13,7 @@
   "date": "2026-11-18",
   "timeET": "14:00",
   "release": "FOMC minutes",
-  "period": "Oct 27\u201328 meeting",
+  "period": "Oct 27–28 meeting",
   "moves": "Federal funds rate",
   "agency": "Federal Reserve",
   "impact": "med",
@@ -93,7 +83,7 @@
   "date": "2026-12-09",
   "timeET": "14:00",
   "release": "FOMC rate decision + projections",
-  "period": "Dec 8\u20139 meeting",
+  "period": "Dec 8–9 meeting",
   "moves": "Federal funds rate, yields",
   "agency": "Federal Reserve",
   "impact": "high",
@@ -173,7 +163,7 @@
   "date": "2026-12-30",
   "timeET": "14:00",
   "release": "FOMC minutes",
-  "period": "Dec 8\u20139 meeting",
+  "period": "Dec 8–9 meeting",
   "moves": "Federal funds rate",
   "agency": "Federal Reserve",
   "impact": "med",
