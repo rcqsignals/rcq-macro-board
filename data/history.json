@@ -1,11 +1,6 @@
 [
  {
   "series": "ust10y",
-  "date": "2026-10-09",
-  "value": 5.244
- },
- {
-  "series": "ust10y",
   "date": "2026-10-13",
   "value": 5.217
  },
@@ -143,11 +138,6 @@
   "series": "ust10y",
   "date": "2026-11-20",
   "value": 4.92
- },
- {
-  "series": "hyoas",
-  "date": "2026-10-09",
-  "value": 3.11
  },
  {
   "series": "hyoas",
@@ -290,9 +280,9 @@
   "value": 3.52
  },
  {
-  "series": "dxy",
-  "date": "2026-10-09",
-  "value": 102.21
+  "series": "hyoas",
+  "date": "2026-11-20",
+  "value": 3.76
  },
  {
   "series": "dxy",
@@ -410,6 +400,11 @@
   "value": 103.84
  },
  {
+  "series": "dxy",
+  "date": "2026-11-23",
+  "value": 104.32
+ },
+ {
   "series": "wti",
   "date": "2026-10-13",
   "value": 94.14
@@ -523,6 +518,11 @@
   "series": "wti",
   "date": "2026-11-20",
   "value": 83.98
+ },
+ {
+  "series": "wti",
+  "date": "2026-11-23",
+  "value": 80.17
  },
  {
   "series": "brent",
@@ -653,6 +653,11 @@
   "series": "brent",
   "date": "2026-11-20",
   "value": 92.57
+ },
+ {
+  "series": "brent",
+  "date": "2026-11-23",
+  "value": 89.37
  },
  {
   "series": "m2",

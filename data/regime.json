@@ -26,12 +26,12 @@
  },
  {
   "pillar": "Credit",
-  "read": "Widening",
-  "tone": "warn"
+  "read": "Widening fast",
+  "tone": "bad"
  },
  {
   "pillar": "Dollar",
-  "read": "Strong",
+  "read": "Strong, rising",
   "tone": "warn"
  },
  {

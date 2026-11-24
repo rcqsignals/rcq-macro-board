@@ -210,12 +210,32 @@
   "status": "Estimated"
  },
  {
+  "date": "2027-01-13",
+  "timeET": "14:00",
+  "release": "Monthly Treasury Statement",
+  "period": "Dec 2026",
+  "moves": "Federal deficit",
+  "agency": "Treasury",
+  "impact": "med",
+  "status": "Estimated"
+ },
+ {
   "date": "2027-01-14",
   "timeET": "08:30",
   "release": "Producer Price Index",
   "period": "Dec 2026",
   "moves": "Inflation pipeline",
   "agency": "BLS",
+  "impact": "med",
+  "status": "Scheduled"
+ },
+ {
+  "date": "2027-01-15",
+  "timeET": "08:30",
+  "release": "Retail sales, advance",
+  "period": "Dec 2026",
+  "moves": "Growth",
+  "agency": "Census",
   "impact": "med",
   "status": "Scheduled"
  }
