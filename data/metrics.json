@@ -141,21 +141,21 @@
  {
   "id": "curve10s2s",
   "display": "+29 bp",
-  "change": "Positive · ▲ 1 bp vs Nov 19 · ▼ 5 bp vs Nov 3",
+  "change": "Positive · flat vs Nov 20 · ▼ 5 bp vs Nov 3",
   "tone": "neutral",
   "period": "10Y minus 2Y",
-  "asOf": "Nov 20, 2026",
+  "asOf": "Nov 23, 2026",
   "source": "FRED T10Y2Y (10Y−2Y)",
   "next": "",
   "category": "curve",
   "value": 29,
   "unit": "bp",
-  "prior": 28,
-  "prior_label": "Nov 19 2026",
+  "prior": 29,
+  "prior_label": "Nov 20 2026",
   "changes": [
    {
-    "vs": "since_2026-11-19",
-    "value": 1,
+    "vs": "since_2026-11-20",
+    "value": 0,
     "unit": "bp"
    },
    {
@@ -164,8 +164,8 @@
     "unit": "bp"
    }
   ],
-  "as_of_date": "2026-11-20",
-  "period_code": "2026-11-20",
+  "as_of_date": "2026-11-23",
+  "period_code": "2026-11-23",
   "next_release_date": null,
   "redistribution": "public_domain"
  },
@@ -223,44 +223,18 @@
  },
  {
   "id": "pce",
-  "display": "3.6%",
-  "change": "▲ from 3.4% in Aug · +0.5% m/m",
+  "display": "3.8%",
+  "change": "▲ from 3.6% in Sep · +0.3% m/m · in line",
   "tone": "bad",
-  "period": "Sep, y/y",
-  "asOf": "Oct 29, 2026",
+  "period": "Oct, y/y",
+  "asOf": "Nov 25, 2026",
   "source": "BEA Personal Income & Outlays",
-  "next": "Nov 25",
+  "next": "Dec 23",
   "category": "inflation",
-  "value": 3.6,
+  "value": 3.8,
   "unit": "pct_yoy",
-  "prior": 3.4,
-  "prior_label": "Aug 2026",
-  "changes": [
-   {
-    "vs": "mom",
-    "value": 0.5,
-    "unit": "pct"
-   }
-  ],
-  "as_of_date": "2026-10-29",
-  "period_code": "2026-09",
-  "next_release_date": "2026-11-25",
-  "redistribution": "public_domain"
- },
- {
-  "id": "corepce",
-  "display": "3.1%",
-  "change": "▲ from 3.0% in Aug · Fed target 2%",
-  "tone": "bad",
-  "period": "Sep, y/y",
-  "asOf": "Oct 29, 2026",
-  "source": "BEA Personal Income & Outlays",
-  "next": "Nov 25",
-  "category": "inflation",
-  "value": 3.1,
-  "unit": "pct_yoy",
-  "prior": 3.0,
-  "prior_label": "Aug 2026",
+  "prior": 3.6,
+  "prior_label": "Sep 2026 (as first reported)",
   "changes": [
    {
     "vs": "mom",
@@ -268,55 +242,81 @@
     "unit": "pct"
    }
   ],
-  "as_of_date": "2026-10-29",
-  "period_code": "2026-09",
-  "next_release_date": "2026-11-25",
+  "as_of_date": "2026-11-25",
+  "period_code": "2026-10",
+  "next_release_date": "2026-12-23",
+  "redistribution": "public_domain"
+ },
+ {
+  "id": "corepce",
+  "display": "3.3%",
+  "change": "▲ from 3.1% in Sep · above 3.2% est. · target 2%",
+  "tone": "bad",
+  "period": "Oct, y/y",
+  "asOf": "Nov 25, 2026",
+  "source": "BEA Personal Income & Outlays",
+  "next": "Dec 23",
+  "category": "inflation",
+  "value": 3.3,
+  "unit": "pct_yoy",
+  "prior": 3.1,
+  "prior_label": "Sep 2026",
+  "changes": [
+   {
+    "vs": "mom",
+    "value": 0.3,
+    "unit": "pct"
+   }
+  ],
+  "as_of_date": "2026-11-25",
+  "period_code": "2026-10",
+  "next_release_date": "2026-12-23",
   "redistribution": "public_domain"
  },
  {
   "id": "m2",
-  "display": "$23.41T",
-  "change": "▲ 5.7% y/y · real M2 ▼ 0.2% m/m",
+  "display": "$23.53T",
+  "change": "▲ 0.5% m/m · real M2 ▲ ~0.2% m/m (vs PCE)",
   "tone": "warn",
-  "period": "Sep, SA",
-  "asOf": "Oct 27, 2026",
+  "period": "Oct, SA",
+  "asOf": "Nov 24, 2026",
   "source": "Fed H.6 via FRED M2SL",
-  "next": "Nov 24",
+  "next": "Dec 22",
   "category": "liquidity",
-  "value": 23413.9,
+  "value": 23532.8,
   "unit": "usd_bn",
-  "prior": 23300.9,
-  "prior_label": "Aug 2026",
+  "prior": 23413.9,
+  "prior_label": "Sep 2026",
   "changes": [
    {
-    "vs": "yoy",
-    "value": 5.7,
+    "vs": "mom",
+    "value": 0.51,
     "unit": "pct"
    }
   ],
-  "as_of_date": "2026-10-27",
-  "period_code": "2026-09",
-  "next_release_date": "2026-11-24",
+  "as_of_date": "2026-11-24",
+  "period_code": "2026-10",
+  "next_release_date": "2026-12-22",
   "redistribution": "public_domain"
  },
  {
   "id": "gdp",
-  "display": "3.4%",
-  "change": "▲ from 2.2% in Q2 · advance estimate",
+  "display": "4.3%",
+  "change": "▲ revised from 3.4% advance · Q2 2.2%",
   "tone": "good",
   "period": "Q3, SAAR",
-  "asOf": "Oct 29, 2026",
-  "source": "BEA GDP advance",
-  "next": "Nov 25 (2nd est.)",
+  "asOf": "Nov 25, 2026",
+  "source": "BEA GDP second estimate",
+  "next": "Dec 23 (3rd est.)",
   "category": "growth",
-  "value": 3.4,
+  "value": 4.3,
   "unit": "pct_saar",
   "prior": 2.2,
   "prior_label": "Q2 2026",
   "changes": [],
-  "as_of_date": "2026-10-29",
+  "as_of_date": "2026-11-25",
   "period_code": "2026-Q3",
-  "next_release_date": "2026-11-25",
+  "next_release_date": "2026-12-23",
   "redistribution": "public_domain"
  },
  {
@@ -367,32 +367,32 @@
  },
  {
   "id": "hyoas",
-  "display": "376 bp",
-  "change": "▲ 24 bp vs Nov 19 · ▲ 53 bp vs Nov 13",
+  "display": "363 bp",
+  "change": "▼ 13 bp vs Nov 20 · ▲ 40 bp vs Nov 13",
   "tone": "bad",
   "period": "HY option-adj. spread",
-  "asOf": "Nov 20, 2026",
+  "asOf": "Nov 23, 2026",
   "source": "ICE BofA via FRED",
   "next": "Daily",
   "category": "credit",
-  "value": 376,
+  "value": 363,
   "unit": "bp",
-  "prior": 352,
-  "prior_label": "Nov 19 2026",
+  "prior": 376,
+  "prior_label": "Nov 20 2026",
   "changes": [
    {
-    "vs": "since_2026-11-19",
-    "value": 24,
+    "vs": "since_2026-11-20",
+    "value": -13,
     "unit": "bp"
    },
    {
     "vs": "since_2026-11-13",
-    "value": 53,
+    "value": 40,
     "unit": "bp"
    }
   ],
-  "as_of_date": "2026-11-20",
-  "period_code": "2026-11-20",
+  "as_of_date": "2026-11-23",
+  "period_code": "2026-11-23",
   "next_release_date": null,
   "redistribution": "licensed_restricted"
  },
@@ -449,32 +449,32 @@
  },
  {
   "id": "dxy",
-  "display": "104.32",
-  "change": "▲ 0.5% Nov 23 · ▲ 2.4% vs Nov 3 · new 19-mo high",
+  "display": "103.81",
+  "change": "▼ 0.5% Nov 24 · ▲ 1.9% vs Nov 3 · just off 19-mo high",
   "tone": "warn",
   "period": "ICE close",
-  "asOf": "Nov 23, 2026",
+  "asOf": "Nov 24, 2026",
   "source": "ICE close (market reports)",
   "next": "Daily",
   "category": "dollar",
-  "value": 104.32,
+  "value": 103.81,
   "unit": "index",
-  "prior": 103.84,
-  "prior_label": "Nov 20 2026",
+  "prior": 104.32,
+  "prior_label": "Nov 23 2026",
   "changes": [
    {
-    "vs": "since_2026-11-20",
-    "value": 0.46,
+    "vs": "since_2026-11-23",
+    "value": -0.49,
     "unit": "pct"
    },
    {
     "vs": "since_2026-11-03",
-    "value": 2.4,
+    "value": 1.9,
     "unit": "pct"
    }
   ],
-  "as_of_date": "2026-11-23",
-  "period_code": "2026-11-23",
+  "as_of_date": "2026-11-24",
+  "period_code": "2026-11-24",
   "next_release_date": null,
   "redistribution": "licensed_restricted"
  },
@@ -558,53 +558,22 @@
  },
  {
   "id": "wti",
-  "display": "$80.17",
-  "change": "▼ 3.9% Nov 23 (Jan contract) · ▼ 23.0% MTD · lowest since Aug",
+  "display": "$82.05",
+  "change": "▲ 2.3% Nov 24 (Jan contract) · ▼ 21.2% MTD",
   "tone": "neutral",
   "period": "Front-month settle",
-  "asOf": "Nov 23, 2026",
+  "asOf": "Nov 24, 2026",
   "source": "NYMEX via market reports",
   "next": "Daily",
   "category": "energy",
-  "value": 80.17,
+  "value": 82.05,
   "unit": "usd_bbl",
-  "prior": 83.41,
-  "prior_label": "Nov 20 2026 (Jan contract)",
+  "prior": 80.17,
+  "prior_label": "Nov 23 2026 (Jan contract)",
   "changes": [
    {
-    "vs": "since_2026-11-20",
-    "value": -3.88,
-    "unit": "pct"
-   },
-   {
-    "vs": "mtd",
-    "value": -23.0,
-    "unit": "pct"
-   }
-  ],
-  "as_of_date": "2026-11-23",
-  "period_code": "2026-11-23",
-  "next_release_date": null,
-  "redistribution": "licensed_restricted"
- },
- {
-  "id": "brent",
-  "display": "$89.37",
-  "change": "▼ 3.5% Nov 23 · ▼ 21.2% MTD · lowest close since Aug 31",
-  "tone": "warn",
-  "period": "Front-month",
-  "asOf": "Nov 23, 2026",
-  "source": "ICE via market reports",
-  "next": "Daily",
-  "category": "energy",
-  "value": 89.37,
-  "unit": "usd_bbl",
-  "prior": 92.57,
-  "prior_label": "Nov 20 2026",
-  "changes": [
-   {
-    "vs": "since_2026-11-20",
-    "value": -3.46,
+    "vs": "since_2026-11-23",
+    "value": 2.35,
     "unit": "pct"
    },
    {
@@ -613,8 +582,39 @@
     "unit": "pct"
    }
   ],
-  "as_of_date": "2026-11-23",
-  "period_code": "2026-11-23",
+  "as_of_date": "2026-11-24",
+  "period_code": "2026-11-24",
+  "next_release_date": null,
+  "redistribution": "licensed_restricted"
+ },
+ {
+  "id": "brent",
+  "display": "$91.40",
+  "change": "▲ 2.3% Nov 24 · ▼ 19.4% MTD · bounced off Aug lows",
+  "tone": "warn",
+  "period": "Front-month",
+  "asOf": "Nov 24, 2026",
+  "source": "ICE via market reports",
+  "next": "Daily",
+  "category": "energy",
+  "value": 91.4,
+  "unit": "usd_bbl",
+  "prior": 89.37,
+  "prior_label": "Nov 23 2026",
+  "changes": [
+   {
+    "vs": "since_2026-11-23",
+    "value": 2.27,
+    "unit": "pct"
+   },
+   {
+    "vs": "mtd",
+    "value": -19.4,
+    "unit": "pct"
+   }
+  ],
+  "as_of_date": "2026-11-24",
+  "period_code": "2026-11-24",
   "next_release_date": null,
   "redistribution": "licensed_restricted"
  },

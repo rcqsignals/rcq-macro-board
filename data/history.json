@@ -285,6 +285,11 @@
   "value": 3.76
  },
  {
+  "series": "hyoas",
+  "date": "2026-11-23",
+  "value": 3.63
+ },
+ {
   "series": "dxy",
   "date": "2026-10-12",
   "value": 102.59
@@ -405,6 +410,11 @@
   "value": 104.32
  },
  {
+  "series": "dxy",
+  "date": "2026-11-24",
+  "value": 103.81
+ },
+ {
   "series": "wti",
   "date": "2026-10-13",
   "value": 94.14
@@ -523,6 +533,11 @@
   "series": "wti",
   "date": "2026-11-23",
   "value": 80.17
+ },
+ {
+  "series": "wti",
+  "date": "2026-11-24",
+  "value": 82.05
  },
  {
   "series": "brent",
@@ -660,6 +675,11 @@
   "value": 89.37
  },
  {
+  "series": "brent",
+  "date": "2026-11-24",
+  "value": 91.4
+ },
+ {
   "series": "m2",
   "date": "2026-05-01",
   "value": 22980.9
@@ -685,6 +705,11 @@
   "value": 23413.9
  },
  {
+  "series": "m2",
+  "date": "2026-10-01",
+  "value": 23532.8
+ },
+ {
   "series": "gdp",
   "date": "2025-10-01",
   "value": 0.5
@@ -702,7 +727,7 @@
  {
   "series": "gdp",
   "date": "2026-07-01",
-  "value": 3.4
+  "value": 4.3
  },
  {
   "series": "corepce",
@@ -723,5 +748,10 @@
   "series": "corepce",
   "date": "2026-09-01",
   "value": 3.1
+ },
+ {
+  "series": "corepce",
+  "date": "2026-10-01",
+  "value": 3.3
  }
 ]

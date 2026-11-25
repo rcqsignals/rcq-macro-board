@@ -6,12 +6,12 @@
  },
  {
   "pillar": "Inflation",
-  "read": "Sticky core",
+  "read": "Re-accelerating",
   "tone": "bad"
  },
  {
   "pillar": "Growth",
-  "read": "Strong",
+  "read": "Strong, revised up",
   "tone": "good"
  },
  {
@@ -26,12 +26,12 @@
  },
  {
   "pillar": "Credit",
-  "read": "Widening fast",
+  "read": "Wide, volatile",
   "tone": "bad"
  },
  {
   "pillar": "Dollar",
-  "read": "Strong, rising",
+  "read": "Strong",
   "tone": "warn"
  },
  {
