@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-11-18",
-  "timeET": "14:00",
-  "release": "FOMC minutes",
-  "period": "Oct 27–28 meeting",
-  "moves": "Federal funds rate",
-  "agency": "Federal Reserve",
-  "impact": "med",
-  "status": "Scheduled"
- },
- {
   "date": "2026-11-24",
   "timeET": "13:00",
   "release": "H.6 Money Stock",
@@ -227,6 +217,16 @@
   "moves": "Growth",
   "agency": "Census",
   "impact": "med",
+  "status": "Scheduled"
+ },
+ {
+  "date": "2027-01-27",
+  "timeET": "14:00",
+  "release": "FOMC rate decision",
+  "period": "Jan 26–27 meeting",
+  "moves": "Federal funds rate, yields",
+  "agency": "Federal Reserve",
+  "impact": "high",
   "status": "Scheduled"
  }
 ]

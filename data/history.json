@@ -140,6 +140,16 @@
   "value": 4.92
  },
  {
+  "series": "ust10y",
+  "date": "2026-11-23",
+  "value": 4.92
+ },
+ {
+  "series": "ust10y",
+  "date": "2026-11-25",
+  "value": 4.85
+ },
+ {
   "series": "hyoas",
   "date": "2026-10-12",
   "value": 3.11
@@ -415,6 +425,11 @@
   "value": 103.81
  },
  {
+  "series": "dxy",
+  "date": "2026-11-25",
+  "value": 103.67
+ },
+ {
   "series": "wti",
   "date": "2026-10-13",
   "value": 94.14
@@ -538,6 +553,11 @@
   "series": "wti",
   "date": "2026-11-24",
   "value": 82.05
+ },
+ {
+  "series": "wti",
+  "date": "2026-11-25",
+  "value": 83.68
  },
  {
   "series": "brent",
@@ -678,6 +698,11 @@
   "series": "brent",
   "date": "2026-11-24",
   "value": 91.4
+ },
+ {
+  "series": "brent",
+  "date": "2026-11-25",
+  "value": 94.61
  },
  {
   "series": "m2",
