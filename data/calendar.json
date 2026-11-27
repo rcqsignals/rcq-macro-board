@@ -228,5 +228,15 @@
   "agency": "Federal Reserve",
   "impact": "high",
   "status": "Scheduled"
+ },
+ {
+  "date": "2027-01-28",
+  "timeET": "08:30",
+  "release": "GDP, advance estimate",
+  "period": "Q4 2026",
+  "moves": "Real GDP growth",
+  "agency": "BEA",
+  "impact": "high",
+  "status": "Scheduled"
  }
 ]

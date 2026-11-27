@@ -367,63 +367,63 @@
  },
  {
   "id": "hyoas",
-  "display": "363 bp",
-  "change": "▼ 13 bp vs Nov 20 · ▲ 40 bp vs Nov 13",
+  "display": "372 bp",
+  "change": "▲ 9 bp vs Nov 23 · ▲ 20 bp vs Nov 19",
   "tone": "bad",
   "period": "HY option-adj. spread",
-  "asOf": "Nov 23, 2026",
+  "asOf": "Nov 24, 2026",
   "source": "ICE BofA via FRED",
   "next": "Daily",
   "category": "credit",
-  "value": 363,
+  "value": 372,
   "unit": "bp",
-  "prior": 376,
-  "prior_label": "Nov 20 2026",
+  "prior": 363,
+  "prior_label": "Nov 23 2026",
   "changes": [
    {
-    "vs": "since_2026-11-20",
-    "value": -13,
+    "vs": "since_2026-11-23",
+    "value": 9,
     "unit": "bp"
    },
    {
-    "vs": "since_2026-11-13",
-    "value": 40,
+    "vs": "since_2026-11-19",
+    "value": 20,
     "unit": "bp"
    }
   ],
-  "as_of_date": "2026-11-23",
-  "period_code": "2026-11-23",
+  "as_of_date": "2026-11-24",
+  "period_code": "2026-11-24",
   "next_release_date": null,
   "redistribution": "licensed_restricted"
  },
  {
   "id": "igoas",
   "display": "98 bp",
-  "change": "▲ 4 bp vs Nov 19 · ▲ 9 bp vs Nov 13",
+  "change": "▲ 1 bp vs Nov 23 · ▲ 5 bp vs Nov 18",
   "tone": "warn",
   "period": "IG option-adj. spread",
-  "asOf": "Nov 20, 2026",
+  "asOf": "Nov 24, 2026",
   "source": "ICE BofA via FRED",
   "next": "Daily",
   "category": "credit",
   "value": 98,
   "unit": "bp",
-  "prior": 94,
-  "prior_label": "Nov 19 2026",
+  "prior": 97,
+  "prior_label": "Nov 23 2026",
   "changes": [
    {
-    "vs": "since_2026-11-19",
-    "value": 4,
+    "vs": "since_2026-11-23",
+    "value": 1,
     "unit": "bp"
    },
    {
-    "vs": "since_2026-11-13",
-    "value": 9,
+    "vs": "since_2026-11-18",
+    "value": 5,
     "unit": "bp"
    }
   ],
-  "as_of_date": "2026-11-20",
-  "period_code": "2026-11-20",
+  "as_of_date": "2026-11-24",
+  "period_code": "2026-11-24",
   "next_release_date": null,
   "redistribution": "licensed_restricted"
  },

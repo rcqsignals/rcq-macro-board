@@ -151,11 +151,6 @@
  },
  {
   "series": "hyoas",
-  "date": "2026-10-12",
-  "value": 3.11
- },
- {
-  "series": "hyoas",
   "date": "2026-10-13",
   "value": 3.16
  },
@@ -300,9 +295,9 @@
   "value": 3.63
  },
  {
-  "series": "dxy",
-  "date": "2026-10-12",
-  "value": 102.59
+  "series": "hyoas",
+  "date": "2026-11-24",
+  "value": 3.72
  },
  {
   "series": "dxy",
@@ -558,11 +553,6 @@
   "series": "wti",
   "date": "2026-11-25",
   "value": 83.68
- },
- {
-  "series": "brent",
-  "date": "2026-10-12",
-  "value": 106.65
  },
  {
   "series": "brent",
